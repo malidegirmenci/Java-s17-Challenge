@@ -6,7 +6,6 @@ import com.workintech.s17challange.entity.CourseGpa;
 import com.workintech.s17challange.exception.ApiException;
 import com.workintech.s17challange.validation.CourseValidation;
 import jakarta.annotation.PostConstruct;
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/courses")
 public class CourseController {
