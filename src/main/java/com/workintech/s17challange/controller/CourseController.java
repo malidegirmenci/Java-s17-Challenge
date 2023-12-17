@@ -20,9 +20,9 @@ import java.util.List;
 @RequestMapping("/courses")
 public class CourseController {
     private List<Course> courses;
-    private CourseGpa lowCourseGpa;
-    private CourseGpa mediumCourseGpa;
-    private CourseGpa highCourseGpa;
+    private final CourseGpa lowCourseGpa;
+    private final CourseGpa mediumCourseGpa;
+    private final CourseGpa highCourseGpa;
 
     @PostConstruct
     public void init() {
